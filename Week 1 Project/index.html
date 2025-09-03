@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple coffee shop website" />
+    <title>Coffe shop Website</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html">
+        <div class="logoContainer">
+        <img
+          src="./assets/logo.webp"
+          alt="Website Logo"
+          width="100"
+          height="100" />
+      </div>
+      </a>
+      <ul class="navLinks" id="navLinks">
+        <li class="navItems"><a href="#HeroSection">Home</a></li>
+        <li class="navItems"><a href="#TopProductSection">Top Products</a></li>
+        <li class="navItems"><a href="#MenuSection">Our Menu</a></li>
+        <li class="navItems"><a href="#GallerySection">Gallery</a></li>
+        <li class="nav-button"><a href="./contact.html">Conact us </a></li>
+      </ul>
+      <div class="menuIcon">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png"
+          alt="Open Menu"
+          height="30"
+          width="30"
+          class="icon"
+          id="openMenu" />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/2997/2997911.png"
+          alt="Close Menu"
+          height="30"
+          width="30"
+          class="icon hidden"
+          id="closeMenu"
+           />
+      </div>
+    <p id="responses" class="responsefromjs"></p>
+
+    </nav>
+
+    <!-- Hero Section  -->
+    <section class="heroSection" id="HeroSection">
+      <img
+        src="https://i.pinimg.com/736x/b7/04/6b/b7046be789eda61f112035049090c701.jpg"
+        alt="hero section image"
+        class="heroBackground" />
+      <div class="overlayContent">
+        <div class="content">
+          <h1>Brewed to Perfection, Served with Passion.</h1>
+          <p>
+            Start your day right with our handcrafted coffee, made from the
+            finest beans and served in a space made for comfort and connection.
+          </p>
+          <a href="#MenuSection">
+            <button>
+            <img
+              src="./assets/menu_icons.png"
+              alt="Menu Icon"
+              height="25"
+              width="25" />
+            View Menu
+          </button>
+          </a>
+        </div>
+        <div class="asideImage">
+          <img src="./assets/210056407_10985327.png" alt="coffe image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Top Products  -->
+    <section class="topProducts" id="TopProductSection">
+      <div class="productContainer">
+        <div class="HeaderContent">
+          <h2>Top Rated Coffees</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eos
+            quae delectus. Esse hic iure sit sequi voluptas vel, adipisci
+            laudantium quod doloribus, repellat cum amet! Molestias odio iste
+            perferendis.
+          </p>
+        </div>
+        <div class="slider-container">
+          <button class="nav left" id="slide-left">&#10094;</button>
+
+          <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://www.allrecipes.com/thmb/chsZz0jqIHWYz39ViZR-9k_BkkE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8624835-how-to-make-a-cappuccino-beauty-4x3-0301-13d55eaad60b42058f24369c292d4ccb.jpg"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Vanilla Drift</h3>
+                    <p>
+                      Smooth medium roast infused with natural vanilla bean,
+                      delivering a sweet and mellow cup.
+                    </p>
+                    <span
+                      >4.2<img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=w_3000,h_3074,x_0,y_0,c_fill"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Midnight Roast</h3>
+                    <p>
+                      A bold, dark roast with notes of bittersweet chocolate and
+                      a smoky finish.
+                    </p>
+                    <span
+                      >4.6<img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-3402c4f.jpg?quality=90&resize=500,454"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Caramel Mist</h3>
+                    <p>
+                      Light roast with creamy caramel undertones and a silky
+                      texture that melts on the tongue.
+                    </p>
+                    <span
+                      >4.4<img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://i.pinimg.com/1200x/fa/95/63/fa956306477e1be8b2974999609b6652.jpg"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Highland Bloom</h3>
+                    <p>
+                      Single-origin Ethiopian coffee with floral aromas, citrus
+                      brightness, and a tea-like body.
+                    </p>
+                    <span
+                      >4.7
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://insanelygoodrecipes.com/wp-content/uploads/2023/06/Espresso-in-Shot-Glass-1024x1024.jpg"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Mocha Ember</h3>
+                    <p>
+                      Rich espresso blend with deep chocolate notes and a touch
+                      of spice for a warming experience.
+                    </p>
+                    <span
+                      >4.3<img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="cardInfo">
+                  <img
+                    src="https://www.foodandwine.com/thmb/CCe2JUHfjCQ44L0YTbCu97ukUzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Latte-FT-BLOG0523-09569880de524fe487831d95184495cc.jpg"
+                    alt="" />
+                  <div class="information_wrapper">
+                    <h3>Coconut Grove</h3>
+                    <p>
+                      Tropical twist on your morning cup—light roast blended
+                      with toasted coconut flavor.
+                    </p>
+                    <span
+                      >4.1<img
+                        src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png"
+                        alt="star"
+                        height="20"
+                        width="20"
+                    /></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="nav right" id="slide-right">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="coffeMenu" id="MenuSection">
+      <div class="menuContainer">
+        <h2 class="menuSectionHeading">Our Special coffee</h2>
+
+        <div class="menuCardsGrid">
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://fnb.tech/wp-content/uploads/2025/01/Lungo-Coffee-Drink.jpg"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">Lungo Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 299 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://www.seriouseats.com/thmb/x5dQAByuE9saNvybQ4sjTU1dHG8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20230621-SEA-DalognaCoffee-LorenaMasso-hero-e6a0eb179a2d457fb40c059d91594c35.jpg"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">Dalgona Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 199 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://www.eatingbirdfood.com/wp-content/uploads/2025/06/iced-coffee-hero-new.jpg"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">Iced Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 159 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://media.assettype.com/homegrown/2024-11-28/d8kdthmm/WhatsApp-Image-2024-11-27-at-16.08.06.jpeg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">Filter Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 159 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://lifestyleofafoodie.com/wp-content/uploads/2024/04/Red-Eye-Coffee-Recipe-6.jpg"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">RedEye Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 159 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Menucard">
+            <div class="menuCoffeePreview">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/049/632/997/non_2x/heart-shaped-latte-art-in-a-white-cup-with-coffee-beans-isolated-on-wooden-table-side-view-of-taiwan-baked-food-photo.jpg"
+                alt="Coffee Preview" />
+            </div>
+
+            <div class="menuOverlayContent">
+              <h3 class="menuCardHeading">Latte Coffee</h3>
+              <p class="menuCardDescription">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Doloribus libero odit asperiores officiis maiores quidem aut et
+                voluptatibus.
+              </p>
+
+              <div class="menuCardFooter">
+                <span class="menuCardItemPrice"> Rs. 299 </span>
+                <button class="menuCardOrderNowButton orderNow">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filterSection" id="GallerySection">
+      <div class="galleryContainer">
+        <h2 class="galleryMainHeading">Image Gallery with Filter</h2>
+
+        <div class="filter-buttons">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="latte">Latte</button>
+          <button data-filter="flatwhite">Flat white</button>
+          <button data-filter="mocha">Mocha</button>
+        </div>
+
+        <div class="gallery">
+          <div class="item latte">
+            <img
+              src="https://images.pexels.com/photos/33744343/pexels-photo-33744343.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Latte Coffee</span>
+          </div>
+          <div class="item latte">
+            <img
+              src="https://images.pexels.com/photos/33669199/pexels-photo-33669199.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Latte Coffee</span>
+          </div>
+          <div class="item latte">
+            <img
+              src="https://images.pexels.com/photos/33687985/pexels-photo-33687985.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Latte Coffee</span>
+          </div>
+          <div class="item latte">
+            <img
+              src="https://images.pexels.com/photos/33722451/pexels-photo-33722451.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Latte Coffee</span>
+          </div>
+          <div class="item flatwhite">
+            <img
+              src="https://images.pexels.com/photos/33715029/pexels-photo-33715029.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Flate White Coffee</span>
+          </div>
+          <div class="item flatwhite">
+            <img
+              src="https://images.pexels.com/photos/6612623/pexels-photo-6612623.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Flate White Coffee</span>
+          </div>
+          <div class="item mocha">
+            <img
+              src="https://images.pexels.com/photos/33736861/pexels-photo-33736861.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Macha Coffe</span>
+          </div>
+          <div class="item mocha">
+            <img
+              src="https://images.pexels.com/photos/8004631/pexels-photo-8004631.jpeg"
+              alt="" />
+            <span class="galleryImageTitle">Mocha Coffee</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2025 Coffee Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const orderButton = document.querySelectorAll(".orderNow");
+      const responseEl = document.getElementById("responses");
+    
+      orderButton.forEach((button) => {
+        button.addEventListener("click", () => {
+          responseEl.innerHTML = "This Coffee is not currently available!.";
+        responseEl.classList.remove("hide");
+        responseEl.classList.add("slide-down", "error");
+        console.log("clicked");
+
+        setTimeout(() => {
+          responseEl.classList.add("hide");
+          responseEl.classList.remove("slide-down", "success", "error");
+        }, 3000);
+        });
+      });
+    </script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

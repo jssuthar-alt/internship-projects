@@ -1,0 +1,420 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+}
+a{
+  text-decoration: none;
+}
+.heroSection {
+  height: 90vh;
+  width: 100%;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+.heroBackground {
+  height: 100%;
+  width: 100%;
+}
+.overlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--BackgroundWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  padding: 20px;
+}
+.heroSection .overlayContent .content {
+  width: 50%;
+}
+.heroSection .overlayContent .content h1 {
+  font-size: 50px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.heroSection .overlayContent .content p {
+  font-size: 18px;
+}
+.heroSection .overlayContent .content button {
+  width: 200px;
+  height: 45px;
+  margin-top: 30px;
+  background-color: var(--ButtonBackground);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: var(--Primary);
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.heroSection .overlayContent .content button:hover {
+  background-color: var(--ButtonHover);
+}
+.asideImage {
+  width: 50%;
+  object-fit: contain;
+}
+.asideImage img {
+  max-width: 100%;
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .overlayContent {
+    width: 100%;
+  }
+  .overlayContent .content h2 {
+    font-size: 45px;
+  }
+  .heroSection .overlayContent .content p {
+    font-size: 16px;
+  }
+}
+@media (min-width:462px) and (max-width: 768px) {
+  .heroSection {
+    height: 100vh;
+  }
+.overlayContent {
+  top: 60%;
+    flex-direction: column;
+  }
+
+}
+@media (max-width: 769px) {
+  .heroSection {
+    height: 100vh;
+  }
+  .overlayContent {
+    flex-direction: column;
+  }
+  .heroSection .overlayContent .content {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroSection .overlayContent .content h1 {
+    font-size: 30px;
+    width: 100%;
+  }
+  .heroSection .overlayContent .content p {
+    font-size: 16px;
+    width: 100%;
+  }
+  .asideImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* section 2 our top coffee */
+.topProducts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #e8dccc;
+  cursor: default;
+}
+.productContainer {
+  width: 1200px;
+  position: relative;
+}
+.HeaderContent {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.HeaderContent h2 {
+  padding-bottom: 10px;
+  font-size: 30px;
+  color: var(--Secondary);
+}
+.HeaderContent p {
+  font-size: 16px;
+  width: 80%;
+}
+/* Slider Styles here */
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  height: 80px;
+  transform: translateY(-50%);
+  background-color: var(--ButtonBackground);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 10px;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background-color: var(--ButtonHover);
+  color: var(--LightDark);
+}
+
+.nav.left {
+  left: 0;
+}
+
+.nav.right {
+  right: 0;
+}
+
+/* CONTENT CSS */
+
+.slide-item {
+  min-width: calc(100% / 3);
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+}
+.slide-item .cardInfo {
+  background-color: #ddd;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.slide-item img {
+  width: 100%;
+  height: 350px;
+}
+.information_wrapper {
+  margin-top: -10px;
+  background-color: #f8ecde;
+  padding: 0 10px;
+}
+.information_wrapper h3 {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.cardInfo .information_wrapper p {
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.cardInfo .information_wrapper span {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+.cardInfo .information_wrapper span img {
+  height: 15px;
+  width: 15px;
+}
+
+@media (max-width: 1200px) {
+  .productContainer {
+    width: 100%;
+    position: relative;
+  }
+  .slide-item {
+    min-width: calc(100% / 2);
+  }
+  .HeaderContent h2 {
+  font-size: 25px;
+}
+
+}
+@media (max-width: 768px) {
+  .topProducts {
+  padding: 50px 20px 0 20px;
+}
+  .slide-item {
+    min-width: calc(100% / 1);
+    padding: 0;
+  }
+  .HeaderContent p {
+    font-size: 16px;
+    width: 100%;
+    text-align: justify;
+  }
+.nav{
+  border-radius: 5px;
+}
+}
+
+/* Menu Section Styles */
+
+.coffeMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+   padding: 50px 20px;
+  background-color: #e8dccc;
+}
+.menuContainer{
+  width: 1200px ;
+  overflow: hidden;
+}
+.menuSectionHeading{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.menuCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.Menucard {
+  background-color: #f8ecde;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.menuCoffeePreview {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.menuCoffeePreview img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: scale 0.3s ease, filter 0.2s ease;
+  filter: grayscale(0.4);
+}
+
+.Menucard:hover img {
+  scale: 1.09;
+  filter: grayscale(0);
+}
+
+.menuOverlayContent{
+  padding: 10px 0;
+}
+.menuCardHeading{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.menuCardDescription{
+  text-align: justify;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+.menuCardFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+.menuCardItemPrice{
+  font-size: 16px;
+  font-weight: bold;
+  color:#000;
+}
+.menuCardOrderNowButton{
+  padding: 6px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--ButtonBackground);
+  color: white;
+  cursor: pointer;
+}
+.menuCardOrderNowButton:hover {
+    background-color: var(--ButtonHover);
+}
+@media (max-width: 1200px) {
+  .menuCardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .menuSectionHeading {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Menucard{
+    max-width: 100%;
+    width: 100%;
+  }
+  .coffeMenu {
+    padding: 50px 20px 0 20px;
+  }
+
+  .menuCardsGrid {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .menuSectionHeading {
+    font-size: 22px;
+  }
+
+  .menuCoffeePreview img {
+    height: auto;
+  }
+}

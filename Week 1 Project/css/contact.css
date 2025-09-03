@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.contactFormsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("https://i.pinimg.com/1200x/e7/34/38/e7343898648e8917e00d4be0c46ea984.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+  padding: 50px 20px;
+}
+
+.contactContainer {
+  width: 1200px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  width: 35%;
+  border-radius: 5px;
+  /* For background blur */
+  background-color: rgba(232, 220, 204, 0.8); /* semi-transparent version of #e8dccc */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 1px solid #cb986877; /* optional, to enhance the frosted effect */
+}
+
+.contactForm h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+.FormField {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.FormField label {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.FormField input {
+background: transparent;
+  font-size: 16px;
+  height: 40px;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+}
+.FormField textarea {
+  resize: none;
+  background: transparent;
+  border: 1px solid black;
+  font-size: 16px;
+  height: 90px;
+  width: 100%; /* make it responsive to parent */
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  box-sizing: border-box; /* ensures padding doesn't add to width */
+}
+.contactForm form button {
+  background-color: var(--ButtonBackground);
+  color: white;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.contactForm form button:hover {
+  background-color: var(--ButtonHover);
+}
+.GoogleMap {
+  width: 50%;
+  background-color: #f8ecde;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .contactFormsection {
+        height: auto;
+}
+  .contactContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .contactForm {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .GoogleMap {
+    border-radius: 5px;
+    width: 100%;
+  }
+}

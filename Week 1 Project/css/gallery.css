@@ -1,0 +1,93 @@
+.filterSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 50px 20px;
+  position: relative;
+  background-color: #e8dccc;
+}
+.galleryContainer{
+  width: 1200px;
+  overflow: hidden;
+}
+.galleryMainHeading {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin-bottom: 10px;
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--ButtonBackground);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.filter-buttons button:hover {
+  background-color: var(--ButtonHover);
+}
+
+.filter-buttons button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery .item {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  object-position: center;
+}
+.gallery .item img{
+  max-width: 100%;
+  height: auto;
+}
+.galleryImageTitle{
+  position: absolute;
+  top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  left: 10px;
+   background-color: #f8ecde;
+  z-index: 999;
+}
+
+.gallery .item.hidden {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+.galleryContainer{
+  width: 100%;
+}
+.galleryMainHeading {
+  font-size: 25px;
+}
+}
+
+@media (max-width: 768px) {
+.gallery .item {
+  width: 100%;
+  height: auto;
+ 
+}
+}

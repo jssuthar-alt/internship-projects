@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --BackgroundWhite: #f9eddf;
+  --Primary:#f9eddf;
+  --Secondary: #000;
+  --LightDark: #3d3d3d;
+  --BorderColors: #873e23;
+  --ButtonHover:#cb9868;
+  --ButtonBackground:#cc8b4f;
+}
+.navbar {
+  position: sticky;
+  top:0;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--BackgroundWhite);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navLinks {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  row-gap: 5px;
+  z-index: 999;
+}
+
+.navItems a {
+  text-decoration: none;
+  color: var(--LightDark);
+  padding: 5px 10px;
+  transition: border-bottom 0.1s ease;
+  border: 2px solid transparent;
+}
+.navItems:hover a{
+    border-bottom: 2px solid var(--ButtonBackground);
+}
+.navItems {
+  padding: 7px 10px;
+  font-size: 16px;
+}
+
+.nav-button{
+    background-color: var(--ButtonBackground);
+    border-radius: 5px;
+    margin-left: 10px;
+     padding: 7px 20px;
+  font-size: 16px;
+}
+.nav-button a{
+    text-decoration: none;
+    color: var(--BackgroundWhite);
+}
+.nav-button:hover{
+    background-color: var(--ButtonHover);
+}
+
+.menuIcon {
+  display: none;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Responsive Design For the Mobiles View */
+@media (max-width: 769px) {
+  .navLinks.collapsed {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navLinks.expanded {
+  max-height: 500px; 
+  opacity: 1;
+  pointer-events: auto;
+  padding: 20px 0;
+}
+  .menuIcon {
+    display: block;
+    z-index: 1001;
+  }
+  .nav-button{
+    margin-left: 0;
+}
+  .navbar {
+    justify-content: space-between;
+  }
+  .navLinks {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    align-items: center;
+    top: 100%;
+    background-color: var(--BackgroundWhite);
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+}
+
+.navItems {
+    width: 60%;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+}
+
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--BorderColors);
+  font-size: 12px;
+  background-color: var(--BackgroundWhite);
+  padding: 20px 0;
+}

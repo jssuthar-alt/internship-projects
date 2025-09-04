@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/popup.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/FAQ.css" />
   </head>
   <body>
     <nav class="navbar">
       <a href="./index.html">
         <div class="logoContainer">
-        <img
-          src="./assets/logo.webp"
-          alt="Website Logo"
-          width="100"
-          height="100" />
-      </div>
+          <img
+            src="./assets/logo.webp"
+            alt="Website Logo"
+            width="100"
+            height="100" />
+        </div>
       </a>
       <ul class="navLinks" id="navLinks">
         <li class="navItems"><a href="#HeroSection">Home</a></li>
@@ -42,11 +43,9 @@
           height="30"
           width="30"
           class="icon hidden"
-          id="closeMenu"
-           />
+          id="closeMenu" />
       </div>
-    <p id="responses" class="responsefromjs"></p>
-
+      <p id="responses" class="responsefromjs"></p>
     </nav>
 
     <!-- Hero Section  -->
@@ -64,13 +63,13 @@
           </p>
           <a href="#MenuSection">
             <button>
-            <img
-              src="./assets/menu_icons.png"
-              alt="Menu Icon"
-              height="25"
-              width="25" />
-            View Menu
-          </button>
+              <img
+                src="./assets/menu_icons.png"
+                alt="Menu Icon"
+                height="25"
+                width="25" />
+              View Menu
+            </button>
           </a>
         </div>
         <div class="asideImage">
@@ -446,6 +445,69 @@
         </div>
       </div>
     </section>
+
+   <section class="FAQSection">
+     <div class="faq-section">
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you have free Wi-Fi? <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, complimentary Wi-Fi is available for all customers.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you accept mobile payments or gift cards? <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, we accept all major credit cards, as well as mobile payment options like Apple Pay and Google Pay. We also offer digital and physical gift cards, which you can purchase in-store.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+           Do you offer decaf options? <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+             Yes, we have decaf options for all our espresso-based drinks and also offer a decaf drip coffee.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you have a customer loyalty or rewards program?<span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes, there is a rewards program where points are earned with every purchase, which can be redeemed for free drinks and other perks. Sign-up is available at the counter or through the mobile app.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What kind of coffee beans do you use?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We use sustainably sourced, locally roasted beans from [Name of Roaster], which allows us to provide the freshest and highest-quality coffee possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
     <footer>
       <p>&copy; 2025 Coffee Website. All rights reserved.</p>
     </footer>
@@ -453,23 +515,24 @@
     <script>
       const orderButton = document.querySelectorAll(".orderNow");
       const responseEl = document.getElementById("responses");
-    
+
       orderButton.forEach((button) => {
         button.addEventListener("click", () => {
           responseEl.innerHTML = "This Coffee is not currently available!.";
-        responseEl.classList.remove("hide");
-        responseEl.classList.add("slide-down", "error");
-        console.log("clicked");
+          responseEl.classList.remove("hide");
+          responseEl.classList.add("slide-down", "error");
+          console.log("clicked");
 
-        setTimeout(() => {
-          responseEl.classList.add("hide");
-          responseEl.classList.remove("slide-down", "success", "error");
-        }, 3000);
+          setTimeout(() => {
+            responseEl.classList.add("hide");
+            responseEl.classList.remove("slide-down", "success", "error");
+          }, 3000);
         });
       });
     </script>
     <script src="./js/gallery.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/FAQ.js"></script>
   </body>
 </html>

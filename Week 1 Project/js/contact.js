@@ -23,7 +23,7 @@ myForm.addEventListener("submit", function (event) {
   }
 
   if (username === "" || email === "" || message === "") {
-    showMessage("Please fill in all fields.", "error");
+    showMessage("Please fill out all the fields.", "error");
     return;
   }
 
